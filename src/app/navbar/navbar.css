@@ -1,0 +1,40 @@
+html{
+    scrool-behavior:smooth;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(15,23,42,.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    color:#00e5ff;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#00e5ff;
+}
