@@ -59,7 +59,8 @@ html{
         position:absolute;
         top:70px;
         right:20px;
-        left:auto;        flex-direction:column;
+        left:auto;     
+        flex-direction:column;
         background:#0f172a;
         width:220px;
         padding:20px;
