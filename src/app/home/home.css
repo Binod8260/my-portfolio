@@ -1,11 +1,12 @@
 .hero{
-    min-height:90vh;
+    min-height:100vh;
     background:#0f172a;
     color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
     padding:0 8%;
+    gap:50px;
 }
 
 .left{
@@ -82,4 +83,44 @@ button:hover{
 .social-icons a:hover{
     background:#00e5ff;
     color:black;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+  .hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px 40px;
+    gap: 30px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 42px;
+  }
+
+  .left h2 {
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
