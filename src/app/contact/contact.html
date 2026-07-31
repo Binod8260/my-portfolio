@@ -1,17 +1,33 @@
 <section class="contact" id="contact">
 
-    <h2>Contact Me</h2>
+  <h2>Contact Me</h2>
 
-    <form>
+  <form (ngSubmit)="sendEmail()">
 
-        <input type="text" placeholder="Binod Das">
+    <input
+      type="text"
+      placeholder="Your Name"
+      [(ngModel)]="name"
+      name="name"
+      required>
 
-        <input type="email" placeholder="binoddas1143@gmail.com">
+    <input
+      type="email"
+      placeholder="Your Email"
+      [(ngModel)]="email"
+      name="email"
+      required>
 
-        <textarea rows="6" placeholder="Your Message"></textarea>
+    <textarea
+      rows="6"
+      placeholder="Your Message"
+      [(ngModel)]="message"
+      name="message"
+      required>
+    </textarea>
 
-        <button type="submit">Send Message</button>
+    <button type="submit">Send Message</button>
 
-    </form>
+  </form>
 
 </section>
