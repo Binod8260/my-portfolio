@@ -10,9 +10,10 @@ html{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 8%;
+    padding:18px 20px;
     background:rgba(15,23,42,.9);
     backdrop-filter:blur(10px);
+    box-sizing: border-box;
     z-index:1000;
 }
 
@@ -45,13 +46,19 @@ html{
     font-size:30px;
     color:white;
     cursor:pointer;
+    line-height:1;
 }
 
 /* Mobile View */
-@media (max-width:1000px){
+@media (max-width:768px){
+
+    .logo{
+        font-size:24px;
+    }
 
     .menu-icon{
         display:block;
+        z-index:1001;
     }
 
     .nav-links{
@@ -71,4 +78,9 @@ html{
     .nav-links.active{
         display:flex;
     }
+}
+.menu-icon{
+    display:block !important;
+    color:red !important;
+    font-size:35px !important;
 }
